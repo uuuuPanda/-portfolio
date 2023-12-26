@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+    <title>Сайт-портфолио Романа Кубова</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body class="page-body">
+    <header class="page-header">
+        <div class="container">
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#intro">Главная</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#description">Обо мне</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#skills">Навыки и стек</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#projects">Проекты</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="#contacts">Связаться со мной</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro" id="intro">
+            <div class="container">
+                <div class="intro-content">
+                    <h1 class="intro-title">Роман Кубов</h1>
+                    <div class="intro-text-wrapper">
+                        <p>Разрабатываю качественные сайты-визитки и актуальные рекламные лендинги</p> 
+                    </div>
+                    <div class="computer">
+                        <img class="computer-image" src="images/main.png" alt="компьютер заставка"  width="404" height="270">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description" id="description">
+            <div class="container">
+                <div class="description-content">
+                    <h1 class="description-title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h1>
+                    <div class="description-text-wrapper">
+                        <p>Вам нужен качественный и интересный сайт? вы пришли точно по адресу!</p> 
+                    </div>
+                    <div class="myface">
+                        <img class="myface-image" src="images/myface.jpg" alt="Роман Кубов"  width="266" height="400">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="skills">
+            <div class="skills-column">
+                <div class="column">
+                    <img class="Development" src="icons/Development.svg" alt="галочки" >
+                    <h2>Разработка сайтов</h2>
+                    <p>Опыт работы в фронтенде, бэкенде и DevOps</p>
+                    <h3>Языки:</h3>
+                    <p>HTML, CSS, JS</p>
+                    <h3>Инструменты:</h3>
+                    <p>VS Code, Github, Git, Дополните инструменты</p>
+                </div>
+                <div class="column">
+                    <img class="Design" src="icons/Design.svg" alt="дизайн" >
+                    <h2>Дизайн</h2>
+                    <p>Опыт с различными инструментами дизайна</p>
+                    <h3>Инструменты::</h3>
+                    <p>Figma, Дополнительные инструменты</p>
+                </div>
+                <div class="column">
+                    <img class="SoftSkills" src="icons/SoftSkills.svg" alt="софт-скил" >
+                    <h2>Soft skills</h2>
+                    <p>Умение работать в команде и усваивать новую информацию</p>
+                    <h3>Навыки:</h3>
+                    <p>дополнить</p>
+                </div>
+              </div>
+        </section>
+
+        <section class="oldprojects" id="projects">
+            <h1 class="projects-title">Проекты</h1>
+            <ul class="projects-list">
+                <li>
+                    <article class="card">
+                        <a class="card-image-link" href="#">
+                            <img class="card-image" src="./images/card.jpg" alt="Питер">
+                        </a>
+                        <h3 class="card-image-title"><a href="#">Экскурсия по Санкт-Петербургу</a></h3>
+                    </article>
+                
+            </ul>
+        </section>
+
+        <section class="page-section contacts" id="contacts">
+            <div class="contacts-content">
+                <div class="contacts-text-wrapper">
+                    <h1>Хотите заказать сайт?</h1>
+                    <p>Напишите мне, чтобы обсудить детали</p>
+                </div>
+                <div class="form">
+                    <img class="form-image" src="images/form.png" alt="клаваруки"  width="323" height="323">
+                </div>
+                <form class="contacts-form" method="post" action="/">
+                    <label for="name">Имя</label>
+                        <input type="text" id="name" name="name" required>
+                    <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    <label for="message">Расскажите про свою задачу</label>
+                        <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Отправить</button>
+                </form>
+            </div>
+        </section>
