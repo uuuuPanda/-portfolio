@@ -1,192 +1,293 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
-<head>
-    <title>Сайт-портфолио Романа Кубова</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="portfolio.css">
-</head>
-<body class="page-body">
-    <header class="page-header">
-        <div class="container">
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#intro">Главная</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#description">Обо мне</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#skills">Навыки и стек</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#projects">Проекты</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="#contacts">Связаться со мной</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <main>
-        <section class="intro" id="intro">
-            <div class="container">
-                <div class="intro-content">
-                    <h1 class="intro-title">Роман Кубов</h1>
-                    <div class="intro-text-wrapper">
-                        <p>Разрабатываю качественные сайты-визитки и актуальные рекламные лендинги</p> 
-                    </div>
-                    <div class="computer">
-                        <img class="computer-image" src="images/main.png" alt="компьютер заставка"  width="404" height="270">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="description" id="description">
-            <div class="container">
-                <div class="description-content">
-                    <h1 class="description-title">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h1>
-                    <div class="description-text-wrapper">
-                        <p>Вам нужен качественный и интересный сайт? вы пришли точно по адресу!</p> 
-                    </div>
-                    <div class="myface">
-                        <img class="myface-image" src="images/myface.jpg" alt="Роман Кубов"  width="266" height="400">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills-section" id="skills">
-            <div class="skills-column">
-                <h1 class="skills-title">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h1>
-                <div class="column">
-                    <img class="Development" src="icons/Development.svg" alt="галочки" >
-                    <h2>Разработка сайтов</h2>
-                    <p>Опыт работы в фронтенде, бэкенде и DevOps</p>
-                    <h3>Языки:</h3>
-                    <p>HTML, CSS, JS</p>
-                    <h3>Инструменты:</h3>
-                    <p>VS Code, Github, Git, Дополните инструменты</p>
-                </div>
-                <div class="column">
-                    <img class="Design" src="icons/Design.svg" alt="дизайн" >
-                    <h2>Дизайн</h2>
-                    <p>Опыт с различными инструментами дизайна</p>
-                    <h3>Инструменты::</h3>
-                    <p>Figma, Дополнительные инструменты</p>
-                </div>
-                <div class="column">
-                    <img class="SoftSkills" src="icons/SoftSkills.svg" alt="софт-скил" >
-                    <h2>Soft skills</h2>
-                    <p>Умение работать в команде и усваивать новую информацию</p>
-                    <h3>Навыки:</h3>
-                    <p>дополнить</p>
-                </div>
-              </div>
-        </section>
-
-        <section class="oldprojects" id="projects">
-            <h1 class="projects-title">Проекты</h1>
-            <ul class="projects-list">
-                <li>
-                    <article class="card">
-                        <a class="card-image-link" href="#">
-                            <img class="card-image" src="./images/card.jpg" alt="Питер">
-                        </a>
-                        <h3 class="card-image-title"><a href="#">Экскурсия по Санкт-Петербургу</a></h3>
-                    </article>
-                
+    <head>
+        <title>Сайт-портфолио Романа Кубова</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="portfolio.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a class="nav-button color-black" href="#main">Главная</a></li>
+                <li><a class="nav-button color-black" href="#about">Обо мне</a></li>
+                <li><a class="nav-button color-black" href="#skills">Навыки и стек</a></li>
+                <li><a class="nav-button color-black" href="#projects">Проекты</a></li>
             </ul>
-            <address class="contacts-address">
-                <a class="contacts-btn" href="#" target="_blank">
-                    Посмотреть на Github
+            <div class="contact-button-container">
+                <a class="contact-button color-orange" href="#form">
+                    <span class="contact-button-text">Связаться со мной</span>
                 </a>
-            </address>
-        </section>
-
-        <section class="page-section contacts" id="contacts">
-            <div class="contacts-content">
-                <div class="contacts-text-wrapper">
-                    <h1>Хотите заказать сайт?</h1>
-                    <p>Напишите мне, чтобы обсудить детали</p>
-                </div>
-                <div class="form">
-                    <img class="form-image" src="images/form.png" alt="клаваруки"  width="323" height="323">
-                </div>
-                <form class="contacts-form" method="post" action="/">
-                    <label for="name">Имя</label>
-                        <input type="text" id="name" name="name" required>
-                    <label for="email">E-mail</label>
-                        <input type="email" id="email" name="email" required>
-                    <label for="message">Расскажите про свою задачу</label>
-                        <textarea id="message" name="message" required></textarea>
-                    <button type="submit">Отправить</button>
-                </form>
             </div>
-        </section>
+        </nav>
 
-        <section class="page-section reviews">
-            <h1 class="reviews-title">Отзывы </h1>
-            <p>Люди, с которыми я работал, остаются довольны результатом.</p>
-            <div class="reviews-item">
-                <div class="reviews-item-image-wrapper">
-                    <img class="reviews-item-image" src="images/Kate.jpg" alt="Екатерина Старкова" width="180" height="270">
+        <main>
+            <section id="main" class="container">
+                <h1 class="big-header color-black">Роман Кубов</h1>
+                <p class="main-desc desc-font color-black">Разрабатываю качественные сайты-визитки и актуальные рекламные лендинги</p> 
+                <img class="main-pic" src="images/main.png" alt="компьютер заставка"  width="404" height="270">
+            </section>
+
+            <section id="about" class="container">
+                <div class="about-details background-turquoise">
+                    <h1 class="big-header color-black">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h1>
+                    <p class="about-desc desc-font color-black">Вам нужен качественный и интересный сайт? вы пришли точно по адресу!</p> 
                 </div>
-                <div class="reviews-item-content">
-                    <div class="reviews-item-text-wrapper">
-                        <h2>Спасибо за классный сайт! Очень оперативная и качественная работа!</h2>
-                        <p>Екатерина Старкова</p>
-                        <p>Тургид, город Калуга</p>
+                <figure class="about-photo">
+                    <img src="images/myface.jpg" alt="Роман Кубов"  width="266" height="400">
+                </figure>
+            </section>
+
+            <section id="skills" class="container">
+                <h1 class="big-header color-black">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h1>
+                <div class="skills-table">
+                    <div class="skills-card">
+                        <section class="skills-card-section">
+                            <img class="skills-card-icon" src="icons/Development.svg" alt="галочки" >
+                            <h2 class="skills-card-header color-black">Разработка сайтов</h2>
+                            <p class="skills-card-text color-black">Опыт работы в фронтенде, бэкенде и DevOps</p>
+                        </section>
+
+                        <section class="skills-card-subheader color-orange"></section>
+                            <h3>Языки:</h3>
+                            <ul class="skills-card-list color-black">
+                                <li>HTML, CSS, JS</li>
+                            </ul>
+                            <h3 class="skills-card-subheader color-orange">Инструменты:</h3>
+                            <ul class="skills-card-list color-black">
+                                <li>VS Code</li>
+                                <li>Github</li>
+                                <li>Git</li>
+                            </ul>
+                        </section>
+                    </div>
+                    
+                    <div class="skills-card">
+                        <section class="skills-card-section">
+                            <img class="skills-card-icon" src="icons/Design.svg" alt="дизайн" >
+                            <h2 class="skills-card-header color-black">Дизайн</h2>
+                            <p class="skills-card-text color-black">Опыт с различными инструментами дизайна</p>
+                        </section>
+
+                        <section class="skills-card-section">
+                            <h3 class="skills-card-subheader color-orange">Инструменты::</h3>
+                            <ul class="skills-card-list color-black">
+                                <li>Figma</li>
+                                <li>дополнительные инструменты</li>
+                            </ul>
+                        </section>
+                    </div>
+                    
+                    <div class="skills-card">
+                        <section class="skills-card-section">
+                            <img class="skills-card-icon" src="icons/SoftSkills.svg" alt="софт-скил" >
+                            <h2 class="skills-card-header color-black">Soft skills</h2>
+                            <p class="skills-card-text color-black">Умение работать в команде и усваивать новую информацию</p>
+                        </section>
+
+                        <section class="skills-card-section">
+                            <h3 class="skills-card-subheader color-orange">
+                                Навыки
+                            </h3>
+                            <ul class="skills-card-list color-black">
+                                <li>Навык</li>
+                                <li>Навык</li>
+                            </ul>
+                        </section>
                     </div>
                 </div>
+            </section>
+
+            <section id="projects" class="container">
+                <h1 class="big-header color-black">Проекты</h1>
+                <div class="projects-display">
+                    <figure class="projects-card">
+                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
+                                <img src="./images/card.jpg" alt="Питер" />
+                        </a>
+                    </figure>
+                    <figure class="projects-card">
+                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">        
+                            <img src="./images/card.jpg" alt="Питер"/>
+                        </a>
+                    </figure>
+                    <figure class="projects-card">
+                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
+                                <img src="./images/card.jpg" alt="Питер"/>
+                        </a>
+                    </figure>
+                    <figure class="projects-card">
+                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
+                                <img src="./images/card.jpg" alt="Питер"/>
+                        </a>
+                    </figure>
+                    <figure class="projects-card">
+                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
+                                <img src="./images/card.jpg" alt="Питер"/>
+                        </a>
+                    </figure>
+                    <figure class="projects-card">
+                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
+                                <img src="./images/card.jpg" alt="Питер"/>
+                        </a>
+                    </figure>
+                </div>
+                
+                <a class="projects-button color-orange" href="https://github.com/uuuuPanda?tab=repositories">
+                    <span class="projects-button-text">Посмотреть на Github</span>
+                </a>
+            </section>
+
+            <section id="form" class="container">
+                <div class="form-details container background-turquoise">
+                        <h1 class="big-header color-black">Хотите заказать сайт?</h1>
+                        <p class="form-details-text desc-font color-black">Напишите мне, чтобы обсудить детали</p>
+                </div>
+
+                <div id="contact-form" class="form-container">
+                    <img id="contact-form" class="form-container" src="images/form.png" alt="клаваруки"  width="323" height="323">
+                    <form class="form">
+                        <fieldset class="form-sender-data">
+                            <label class="form-field" for="name"></label>
+                                <span class="form-label color-black">Имя</span>
+                                <input class="form-input color-black" type="text" name="name" />
+                            </label>
+
+                            <label class="form-field" for="email">
+                                <span class="form-label color-black">E-mail</span>
+                                <input class="form-input color-black" type="email" name="email" />
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="form-submit">
+                            <button class="form-button color-orange" type="submit">
+                                <span class="form-button-text">Отправить</span>
+                            </button>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+
+            <section id="reviews" class="container">
+                <h1 class="big-header color-black">Отзывы </h1>
+                <p class="reviews-desc desc-font color-black">Люди, с которыми я работал, остаются довольны результатом.</p>
+                <figure class="reviews-card">
+                    <div class="reviews-photo">
+                        <img src="images/Kate.jpg" alt="Фото Екатерины"/>
+                    </div>
+                    <figcaption class="reviews-caption">
+                        <p class="reviews-text color-black">Спасибо за классный сайт! Очень оперативная и качественная работа!</p>
+                        <p class="reviews-info color-black">Екатерина Старкова</p>
+                        <p class="reviews-info color-black">Тургид, город Калуга</p>
+                    </figcaption>
+                </figure>
+                
+                <div class="reviews-toggle">
+                    <button class="reviews-toggle-button" type="button">
+                        <img 
+                                class="reviews-toggle-arrow" 
+                                src="icons/Arrow-L.svg" 
+                                alt="Стрелка влево"
+                            />
+                            <img 
+                                class="reviews-toggle-arrow icon-hover"
+                                src="icons/Arrow-L-white.svg" 
+                                alt="Стрелка влево" 
+                            />
+                        </button>
+
+                    <button class="reviews-toggle-button" type="button">
+                        <img 
+                            class="reviews-toggle-arrow" 
+                            src="icons/Arrow-R.svg" 
+                            alt="Стрелка вправо" 
+                        />
+                        <img 
+                            class="reviews-toggle-arrow icon-hover" 
+                            src="icons/Arrow-R-white.svg" 
+                            alt="Стрелка вправо" 
+                        />
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <aside id="letstalk" class="container">
+            <div class="letstalk-box">
+                <h2 class="letstalk-header">
+                    Договоримся о сотрудничестве
+                </h2>
+                <p class="letstalk-text">
+                    У вас есть идея проекта или предложение о работе? 
+                    Напишите мне. Я открыт к разным вариантам
+                    сотрудничества.
+                </p>
+                <div class="letstalk-button-container">
+                    <a class="letstalk-button" href="#form">
+                        <span class="letstalk-button-text">Связаться с разработчиком</span>
+                    </a>
+                </div>
             </div>
-            <button class="image-button">левая стрелка</button>
-            <button class="image-button">правая стрелка</button>
-        </section>
-
-        <aside class="page-aside sidebar">
-            <ul class="sidebar-list">
-                <li>
-                    <article class="card">
-                        <h2 class="card-title">Договоримся о сотрудничестве</h2>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <h3 class="card-title">У вас есть идея проекта или предложение о работе? Напишите мне. Я открыт к разным вариантам сотрудничества.</h3>
-                    </article>
-                </li>
-                <li>
-                    <article class="card">
-                        <button class="card-button">Связаться с разработчиком</button>
-                    </article>
-                </li>
-            </ul>
         </aside>
-    </main>
 
-    <footer class="page-footer">
-        <div class="container">
-            <button class="card-footer-1">TG</button>
-            <button class="card-footer-2">HEAD</button>
-            <button class="card-footer-3">MAIL</button>
-        </div>
-    </footer>
+        <footer>
+            <div class="footer-socials">
+                <a class="footer-social-container" href="https://t.me/Romzavr">
+                    <img 
+                        class="footer-social-icon" 
+                        src="icons/TG.svg"
+                    />
+                    <img 
+                        class="footer-social-icon icon-hover" 
+                        src="icons/TG-white.svg"
+                    />
+                </a>
+                <a class="footer-social-container" href="https://habr.com/ru/users/example">
+                    <img
+                        class="footer-social-icon" 
+                        src="icons/Habr.svg" 
+                    />
+                    <img
+                        class="footer-social-icon icon-hover"
+                        src="icons/Habr-white.svg"
+                    />
+                </a>
+                <a class="footer-social-container" href="mailto:hi1tone@mail.ru">
+                    <img 
+                        class="footer-social-icon" 
+                        src="icons/Email.svg" 
+                    />
+                    <img 
+                        class="footer-social-icon icon-hover" 
+                        src="icons/Email-white.svg" 
+                    />
+                </a>
+            </div>
 
-    <footer class="page-footer-final">
-        <div class="container">
-            <a href="https://ru.freepik.com/free-vector/software-integration-concept-illustration_18352184.htm#page=2&query=веб-разработка&position=7&from_view=search&track=sph">Изображение-1 от Storyset на Freepik.</a>
-            <a href="https://ru.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#&position=12&from_view=author">Изображение-2 от Storyset наFreepik.</a>
-            <a href="https://www.flaticon.com/ru/free-icons/html" title="html иконки">Иконка "Html"от Frey Wazza на Flaticon.</a>
-            <a href="https://www.flaticon.com/ru/free-icons/" title="телеграмма иконки">Иконка«Телеграм» от Freepik на Flaticon.</a>
-            <a href="https://www.flaticon.com/ru/free-icons/" title="общение иконки">Иконка «Общение»от Ilham Fitrotul Hayat на Flaticon.</a>
-            <a href="https://www.flaticon.com/ru/free-icons/-" title="Дизайн сайта иконки">Иконка«Дизайн сайта» от Freepik на Flaticon.</a>
-            <a href="https://www.flaticon.com/ru/free-icons/-" title="Эл. адрес иконки">Иконка«Эл.адрес» от Those Icons на Flaticon.</a>
-        </div>
-    </footer>
-</body>
+            <p class="footer-links color-black">
+                Изображения и иконки:
+                <a href="https://ru.freepik.com/free-vector/software-integration-concept-illustration_18352184.htm#page=2&query=веб-разработка&position=7&from_view=search&track=sph">
+                    Изображение-1 от Storyset на Freepik.
+                </a>
+                <a href="https://ru.freepik.com/free-vector/code-typing-concept-illustration_10259340.htm#&position=12&from_view=author">
+                    Изображение-2 от Storyset на Freepik.
+                </a>
+                <a href="https://www.flaticon.com/ru/free-icons/html" title="html иконки">
+                    Иконка "Html" oT Frey Wazza a Flaticon.
+                </a>
+                <a href="https://www.flaticon.com/ru/free-icons/" title="телеграмма иконки">
+                    Иконка «Телеграм» от Freepik на Flaticon.
+                </a>
+                <a href="https: //www.flaticon.com/ru/free-icons/" title="общение иконки">
+                    Иконка «Общение» от Ilham Fitrotul Hayat на Flaticon.
+                </a>
+                <a href="https://www.flaticon.com/ru/free-icons/-" title="Дизайн сайта иконки">
+                    Иконка «Дизайн сайта» от Freepik на Flaticon.
+                </a>
+                <a href="https://www.flaticon.com/ru/free-icons/-" title=" Эл. адрес иконки">
+                    Иконка «Эл. адрес» от Those Icons a Flaticon.
+                </a>
+            </p>
+        </footer>
+    </body>
 </html>
