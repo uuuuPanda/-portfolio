@@ -1,61 +1,164 @@
 @font-face {
-    font-family: TildaSans-Black;
-    src: url(/fonts/TildaSans-Black.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url("/fonts/TildaSans-Light.ttf");
 }
-
 @font-face {
-    font-family: TildaSans-Bold;
-    src: url(/fonts/TildaSans-Bold.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/TildaSans-Regular.ttf");
 }
-
 @font-face {
-    font-family: TildaSans-ExtraBold;
-    src: url(/fonts/TildaSans-ExtraBold.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/TildaSans-Medium.ttf");
 }
-
 @font-face {
-    font-family: TildaSans-Light;
-    src: url(/fonts/TildaSans-Light.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 600;
+    src: url("/fonts/TildaSans-Semibold.ttf");
 }
-
 @font-face {
-    font-family: TildaSans-Medium;
-    src: url(/fonts/TildaSans-Medium.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 700;
+    src: url("/fonts/TildaSans-Bold.ttf");
 }
-
 @font-face {
-    font-family: TildaSans-Regular;
-    src: url(/fonts/TildaSans-Regular.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 800;
+    src: url("/fonts/TildaSans-ExtraBold.ttf");
 }
-
 @font-face {
-    font-family: TildaSans-Semibold;
-    src: url(/fonts/TildaSans-Semibold.ttf);
+    font-family: TildaSans;
+    font-style: normal;
+    font-weight: 900;
+    src: url("/fonts/TildaSans-Black.ttf");
 }
 
-.page-body {
-    text-align: center;
-}
-
-.navbar-list {
-    list-style: none;
+body {
     margin: 0;
     padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, input, textarea {
+    outline: none;
+    appearance: none;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+.color-black {
+    color: #141C3A;
+}
+
+.color-orange {
+    color: #FF9235;
+}
+
+.background-turquoise {
+    background-color: #5dd9c8;
+}
+
+.container {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.navbar-link {
-    display: flex;
+.big-header {
+    padding: 0;
+    margin: 0;
+    font-family: "TildaSans", sans-serif;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;
     text-align: center;
-    width: auto;
-    padding: 12px;
-    color: #000000;
-    text-decoration: none;
-    font-family: "TildaSans-ExtraBold", sans-serif;
-    font-size: 25px;
+    text-transform: uppercase;
 }
 
-.navbar-link:hover {
-    opacity: 0.5;
+.desc-font {
+    font-family: "TildaSans", sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 54px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    width: 50%;
+    margin: 45px 0 45px 25%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-button {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.contact-button {
+    border: 2px solid #ff9235;
+    padding: 9px 22px;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.contact-button:hover {
+    background-color: #ff9235;  
+    color: #ffffff;
+}
+
+.contact-button-text {
+    font-family: "TildaSans", sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 27px;
+    color: inherit;
+}
+
+.contact-button-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
