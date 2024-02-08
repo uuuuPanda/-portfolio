@@ -1,11 +1,35 @@
-.color-black {
-    color: #141C3A;
+:root {
+    --color-blck: #141c3a;
+    --color-orng: #ff9235;
+    --color-turq: #5dd9c8;
+    --color-purp: #8063a6;
+    --color-whit: #ffffff;
+    --text-p: 400 36px/54px "TildaSans", sans-serif;
+    --text-button: 400 25px/30px "TildaSans", sans-serif;
+    --text-proj-desc: 400 25px/27px "TildaSans", sans-serif;
+    --text-button: 700 25px/30px "TildaSans", sans-serif;
+    --text-bold-button: 600 25px/27px "TildaSans", sans-serif;
+    --text-table: 400 30px/45px "TildaSans", sans-serif;
+    --text-table-header: 700 36px/54px "TildaSans", sans-serif;
+    --text-table-subheader: 700 30px/45px "TildaSans", sans-serif;
+    --text-reviews-info: 400 20px/30px "TildaSans", sans-serif;
+    --text-box-header: 600 20px/30px "TildaSans", sans-serif;
+    --text-box-button: 700 20px/30px "TildaSans", sans-serif;
+    --text-form-label: 400 20px/36px "TildaSans", sans-serif;
+    --text-footer: 400 16px/24px "TildaSans", sans-serif;
+    --nav-shadow: 0px 3px 10px 0px #0000002a;
+    --card-shadow: 5px 5px 10px 0px #00000055;
+    --table-border: 1px solid var(--color-turq);
+    --img-border: 3px solid var(--color-turq);
+    --button-border: 2px solid var(--color-orng);
 }
-.color-orange {
-    color: #FF9235;
+
+html {
+    scroll-behavior: smooth;
 }
-.background-turquoise {
-    background-color: #5dd9c8;
+
+body {
+    margin-top: 126px;
 }
 
 .container {
@@ -13,27 +37,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    scroll-margin-top: 126px;
 }
 
 .big-header {
     padding: 0;
     margin: 0;
-    font-family: "TildaSans", sans-serif;
-    font-size: 54px;
-    font-weight: 700;
-    line-height: 81px;
+    font: 700 54px/81px "TildaSans", sans-serif;
     text-align: center;
     text-transform: uppercase;
+    max-width: 90vw;
 }
 
 .desc-font {
-    font-family: "TildaSans", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 54px;
+    font: var(--text-p);
     text-align: center;
 }
 
 button {
     cursor: pointer;
+}
+
+.color-black {
+    color: var(--color-blck);
+}
+
+.color-orange {
+    color: var(--color-orng);
+}
+
+.background-turquoise {
+    background-color: var(--color-turq);
 }

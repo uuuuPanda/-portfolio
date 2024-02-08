@@ -1,6 +1,7 @@
 #projects .big-header {
     margin: 70px 0;
 }
+
 .projects-display {
     width: 80%;
     display: flex;
@@ -8,36 +9,96 @@
     gap: 2vw;
     justify-content: center;
 }
+
 .projects-card {
     padding: 0;
     margin: 0;
     width: 24vw;
     height: 13.5vw;
     box-sizing: border-box;
-    border: 3px solid #8063a6;
+    border: 3px solid var(--color-purp);
     border-radius: 12px;
+    background: url(../assets/images/screenshot.png), var(--color-whit);
+    background-size: cover;
     overflow: hidden;
+    z-index: 4;
+    transition: transform   0.3s ease-in,
+                background  0.3s ease-in,
+                box-shadow  0.3s ease-in,
+                z-index     0.3s ease-out;
 }
-.projects-card img {
-    width: 100%;
+
+.projects-card:hover {
+    z-index: 8;
+    transform: scale(1.25);
+    background: var(--color-purp);
+    box-shadow: var(--card-shadow);
+}
+
+.projects-card-caption {
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    object-fit: cover;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    margin: 0;
+    font: var(--text-proj-desc);
+    text-align: center;
+    color: var(--color-whit);
+    transform: opacity 0.3s ease-in;
 }
+
+.projects-card:hover .projects-card-caption {
+    opacity: 1;
+}
+
+.projects-card-caption a {
+    font: var(--text-bold-button);
+    color: var(--color-whit);
+    margin-top: 30px;
+    padding: 9px 22px;
+    border: 2px solid var(--color-whit);
+    border-radius: 15px;
+}
+
+.projects-card-caption a:hover {
+    background-color: var(--color-whit);
+    color: var(--color-purp);
+}
+
 .projects-button {
     padding: 15px 40px;
     margin: 100px 0;
-    border: 2px solid #ff9235;
+    border: var(--button-border);
     border-radius: 15px;
 }
+
 .projects-button:hover {
-    background-color: #ff9235;
-    color: #ffffff;
+    background-color: var(--color-orng);
+    color: var(--color-whit);
 }
+
 .projects-button-text {
-    font-family: "TildaSans", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    line-height: 30px;
+    font: var(--text-button);
     text-align: center;
+    white-space: nowrap;
     color: inherit;
+}
+
+@media screen and (max-width: 1400px) {
+    .projects-card {
+        width: 36vw;
+        height: 20.25vw;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .projects-card {
+        width: 64vw;
+        height: 36vw;
+    }
 }

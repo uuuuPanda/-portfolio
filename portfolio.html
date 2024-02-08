@@ -15,6 +15,7 @@
         <meta name="robot" content="index, follow" />
         <link rel="canonical" href="https://example.com/" />
         <meta name="viewport" content="width=device-width, initial-scale=0.75" />
+
         <link rel="stylesheet" href="styles/fonts.css">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/common.css">
@@ -29,8 +30,9 @@
         <link rel="stylesheet" href="styles/footer.css">
         <link rel="stylesheet" href="styles/animations.css">
     </head>
-    <body>
-        <nav>
+
+    <body tabindex="0">
+        <nav class="enter-from-top">
             <ul>
                 <li><a class="nav-button color-black" href="#main">Главная</a></li>
                 <li><a class="nav-button color-black" href="#about">Обо мне</a></li>
@@ -39,38 +41,55 @@
             </ul>
             
             <div class="contact-button-container">
-                <a class="contact-button color-orange" href="#form">
+                <a class="contact-button color-orange animated" href="#form">
                     <span class="contact-button-text">Связаться со мной</span>
                 </a>
             </div>
         </nav>
 
+        <nav class="mobile-nav enter-from-top">
+            <details>
+                <summary></summary>
+                <ul>
+                    <li><a class="nav-button color-black" href="#main">Главная</a></li>
+                    <li><a class="nav-button color-black" href="#about">Обо мне</a></li>
+                    <li><a class="nav-button color-black" href="#skills">Навыки и стек</a></li>
+                    <li><a class="nav-button color-black" href="#projects">Проекты</a></li>
+                </ul>
+            </details>
+
+            <a class="contact-button color-orange animated" href="#form">
+                <span class="contact-button-text">Связаться со мной</span>
+            </a>
+        </nav>
+
         <main>
             <section id="main" class="container">
-                <h1 class="big-header color-black">Роман Кубов</h1>
-                <p class="main-desc desc-font color-black">Разрабатываю качественные сайты-визитки и актуальные рекламные лендинги</p> 
-                <img class="main-pic" src="assets/images/main.png" alt="компьютер заставка">
+                <h1 class="big-header color-black fade-in-1">Роман Кубов</h1>
+                <p class="main-desc desc-font color-black fade-in-2">Разрабатываю качественные сайты-визитки и актуальные рекламные лендинги</p> 
+                <img class="main-pic fade-in-3" src="assets/images/main.png" alt="компьютер заставка">
             </section>
 
             <section id="about" class="container">
-                <div class="about-details background-turquoise">
-                    <h1 class="big-header color-black">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h1>
-                    <p class="about-desc desc-font color-black">Вам нужен качественный и интересный сайт? Я помогу его создать!</p> 
+                <div class="about-details background-turquoise fade-in-1">
+                    <h1 class="big-header color-black fade-in-2">ПРИВЕТ, Я ВЕБ-РАЗРАБОТЧИК</h1>
+                    <p class="about-desc desc-font color-black fade-in-3">Вам нужен качественный и интересный сайт? Я помогу его создать!</p> 
                 </div>
-                <figure class="about-photo">
-                    <img src="assets/images/myface.jpg" alt="фото Роман Кубов">
+                <figure class="about-photo fade-in-4">
+                    <img src="assets/images/myface.jpg" alt="фото Романа Кубова">
                 </figure>
             </section>
 
             <section id="skills" class="container">
-                <h1 class="big-header color-black">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h1>
-                <div class="skills-table">
-                    <div class="skills-card">
+                <h1 class="big-header color-black fade-in-1">НАВЫКИ И СТЕК ТЕХНОЛОГИЙ</h1>
+                <div class="skills-table fade-in-2">
+                    <div class="skills-card fade-in-2">
                         <section class="skills-card-section">
                             <img class="skills-card-icon" src="assets/icons/Development.svg" alt="галочки" >
                             <h2 class="skills-card-header color-black">Разработка сайтов</h2>
                             <p class="skills-card-text color-black">Опыт работы в фронтенде, бэкенде и DevOps</p>
                         </section>
+
                         <section class="skills-card-section">
                             <h3 class="skills-card-subheader color-orange">Языки:</h3>
                             <ul class="skills-card-list color-black">
@@ -84,7 +103,8 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="skills-card">
+
+                    <div class="skills-card fade-in-3">
                         <section class="skills-card-section">
                             <img class="skills-card-icon" src="assets/icons/Design.svg" alt="дизайн" >
                             <h2 class="skills-card-header color-black">Дизайн</h2>
@@ -99,12 +119,14 @@
                             </ul>
                         </section>
                     </div>
-                    <div class="skills-card">
+
+                    <div class="skills-card fade-in-4">
                         <section class="skills-card-section">
                             <img class="skills-card-icon" src="assets/icons/SoftSkills.svg" alt="софт-скил" >
                             <h2 class="skills-card-header color-black">Soft skills</h2>
                             <p class="skills-card-text color-black">Умение работать в команде и усваивать новую информацию</p>
                         </section>
+
                         <section class="skills-card-section">
                             <h3 class="skills-card-subheader color-orange">
                                 Навыки
@@ -119,54 +141,61 @@
             </section>
 
             <section id="projects" class="container">
-                <h1 class="big-header color-black">Проекты</h1>
-                <div class="projects-display">
+                <h1 class="big-header color-black fade-in-1">Проекты</h1>
+                <div class="projects-display fade-in-2">
                     <figure class="projects-card">
-                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
-                            <img src="assets/images/1.png" alt="Питер">
-                        </a>
+                        <figcaption class="projects-card-caption">
+                            Для заказчика создан сайт "Экскурсия по Санкт-Петербургу". Уложился в короткие сроки, бонусом создал раздел обратной связи.
+                            <a class="animated" href="https://github.com/uuuuPanda/html-and-css-first-work.git">Посмотреть сайт</a>
+                        </figcaption>
                     </figure>
                     <figure class="projects-card">
-                        <a href="https://github.com/uuuuPanda/kube.git">        
-                            <img src="assets/images/kube.jpg" alt="Вращающийся кубик">
-                        </a>
+                        <figcaption class="projects-card-caption">
+                            Заказчик попросил сделать вращающийся по оси кубик с нумерованными гранями. Исполнение заказа оказалось не таким простым, но очень интересным.
+                            <a class="animated" href="https://github.com/uuuuPanda/kube.git">Посмотреть сайт</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="projects-card">
+                        <figcaption class="projects-card-caption">
+                            Короткое описание проекта: в чем его суть, что было сделано
+                            <a class="animated" href="https://example.com">Посмотреть сайт</a>
+                        </figcaption>
                     </figure>
                     <figure class="projects-card">
-                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
-                            <img src="assets/images/1.png" alt="Питер">
-                        </a>
+                        <figcaption class="projects-card-caption">
+                            Короткое описание проекта: в чем его суть, что было сделано
+                            <a class="animated" href="https://example.com">Посмотреть сайт</a>
+                        </figcaption>
                     </figure>
                     <figure class="projects-card">
-                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
-                            <img src="assets/images/1.png" alt="Питер">
-                        </a>
+                        <figcaption class="projects-card-caption">
+                            Короткое описание проекта: в чем его суть, что было сделано
+                            <a class="animated" href="https://example.com">Посмотреть сайт</a>
+                        </figcaption>
                     </figure>
                     <figure class="projects-card">
-                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
-                            <img src="assets/images/1.png" alt="Питер">
-                        </a>
-                    </figure>
-                    <figure class="projects-card">
-                        <a href="https://github.com/uuuuPanda/html-and-css-first-work.git">
-                            <img src="assets/images/1.png" alt="Питер">
-                        </a>
+                        <figcaption class="projects-card-caption">
+                            Короткое описание проекта: в чем его суть, что было сделано
+                            <a class="animated" href="https://example.com">Посмотреть сайт</a>
+                        </figcaption>
                     </figure>
                 </div>
                 
-                <a class="projects-button color-orange" href="https://github.com/uuuuPanda?tab=repositories">
+                <a class="projects-button color-orange fade-in-3 animated" href="https://github.com/uuuuPanda?tab=repositories">
                     <span class="projects-button-text">Посмотреть на Github</span>
                 </a>
             </section>
 
             <section id="form" class="container">
-                <div class="form-details container background-turquoise">
-                        <h1 class="big-header color-black">Хотите заказать сайт?</h1>
-                        <p class="form-details-text desc-font color-black">Напишите мне, чтобы обсудить детали</p>
+                <div class="form-details container background-turquoise fade-in-1">
+                        <h1 class="big-header color-black fade-in-2">Хотите заказать сайт?</h1>
+                        <p class="form-details-text desc-font color-black fade-in-2">Напишите мне, чтобы обсудить детали</p>
                 </div>
 
                 <div id="contact-form" class="form-container">
-                    <img id="contact-form" class="form-container" src="assets/images/form.png" alt="клаваруки">
-                    <form class="form">
+                    <img class="form-pic fade-in-3" src="assets/images/form.png" alt="клаваруки">
+                    <form class="form fade-in-4">
                         <fieldset class="form-sender-data">
                             <label class="form-field" for="name">
                                 <span class="form-label color-black">Имя</span>
@@ -187,7 +216,7 @@
                         </fieldset>
 
                         <fieldset class="form-submit">
-                            <button class="form-button color-orange" type="submit">
+                            <button class="form-button color-orange animated" type="submit">
                                 <span class="form-button-text">Отправить</span>
                             </button>
                         </fieldset>
@@ -196,35 +225,35 @@
             </section>
 
             <section id="reviews" class="container">
-                <h1 class="big-header color-black">Отзывы </h1>
-                <p class="reviews-desc desc-font color-black">Люди, с которыми я работал, остаются довольны результатом.</p>
+                <h1 class="big-header color-black fade-in-1">Отзывы </h1>
+                <p class="reviews-desc desc-font color-black fade-in-2">Люди, с которыми я работал, остаются довольны результатом.</p>
                 <figure class="reviews-card">
-                    <div class="reviews-photo">
+                    <div class="reviews-photo fade-in-3">
                         <img src="assets/images/fominak.jpg" alt="Фото Екатерины"/>
                     </div>
-                    <figcaption class="reviews-caption">
+                    <figcaption class="reviews-caption fade-in-4">
                         <p class="reviews-text color-black">Спасибо за классный сайт для моего туристического бизнеса! Очень оперативная и качественная работа!</p>
                         <p class="reviews-info color-black">Екатерина Фомина</p>
                         <p class="reviews-info color-black">Тургид, город Калуга</p>
                     </figcaption>
                 </figure>
                 <figure class="reviews-card">
-                    <div class="reviews-photo">
+                    <div class="reviews-photo fade-in-3">
                         <img src="assets/images/kozlov.jpg" alt="Фото Дениса"/>
                     </div>
-                    <figcaption class="reviews-caption">
+                    <figcaption class="reviews-caption fade-in-4">
                         <p class="reviews-text color-black">Не получалось сделать вращающийся куб для практической работы, но Роман помог справиться с этой задачей! Спасибо!</p>
                         <p class="reviews-info color-black">Денис Козлов</p>
                         <p class="reviews-info color-black">3D-визуализатор, город Калуга</p>
                     </figcaption>
                 </figure>
                 
-                <div class="reviews-toggle">
-                    <button class="reviews-toggle-button" type="button">
+                <div class="reviews-toggle fade-in-4">
+                    <button class="reviews-toggle-button animated" type="button">
                         <img class="reviews-toggle-arrow" src="assets/icons/Arrow-L.svg" alt="Стрелка влево">
                         <img class="reviews-toggle-arrow icon-hover" src="assets/icons/Arrow-L-white.svg" alt="Стрелка влево">
                     </button>
-                    <button class="reviews-toggle-button" type="button">
+                    <button class="reviews-toggle-button animated" type="button">
                         <img class="reviews-toggle-arrow" src="assets/icons/Arrow-R.svg" alt="Стрелка вправо">
                         <img class="reviews-toggle-arrow icon-hover" src="assets/icons/Arrow-R-white.svg" alt="Стрелка вправо">
                     </button>
@@ -232,8 +261,8 @@
             </section>
         </main>
 
-        <aside id="letstalk" class="container">
-            <div class="letstalk-box">
+        <aside id="letstalk" class="container fade-in-1">
+            <div class="letstalk-box fade-in-2">
                 <h2 class="letstalk-header">
                     Договоримся о сотрудничестве
                 </h2>
@@ -243,16 +272,16 @@
                     сотрудничества.
                 </p>
                 <div class="letstalk-button-container">
-                    <a class="letstalk-button" href="#form">
+                    <a class="letstalk-button animated" href="#form">
                         <span class="letstalk-button-text">Связаться с разработчиком</span>
                     </a>
                 </div>
             </div>
         </aside>
 
-        <footer>
-            <div class="footer-socials">
-                <a class="footer-social-container" href="https://vk.com/id91140600">
+        <footer class="fade-in-1">
+            <div class="footer-socials fade-in-2">
+                <a class="footer-social-container animated" href="https://vk.com/id91140600">
                     <img 
                         class="footer-social-icon" 
                         src="assets/icons/vk.svg"
@@ -262,7 +291,7 @@
                         src="assets/icons/vk-white.svg"
                     />
                 </a>
-                <a class="footer-social-container" href="https://t.me/Romzavr">
+                <a class="footer-social-container animated" href="https://t.me/Romzavr">
                     <img 
                         class="footer-social-icon" 
                         src="assets/icons/TG.svg"
@@ -272,7 +301,7 @@
                         src="assets/icons/TG-white.svg"
                     />
                 </a>
-                <a class="footer-social-container" href="https://habr.com/ru/users/example">
+                <a class="footer-social-container animated" href="https://habr.com/ru/users/example">
                     <img
                         class="footer-social-icon" 
                         src="assets/icons/Habr.svg" 
@@ -282,7 +311,7 @@
                         src="assets/icons/Habr-white.svg"
                     />
                 </a>
-                <a class="footer-social-container" href="mailto:hi1tone@mail.ru">
+                <a class="footer-social-container animated" href="mailto:hi1tone@mail.ru">
                     <img 
                         class="footer-social-icon" 
                         src="assets/icons/Email.svg" 
