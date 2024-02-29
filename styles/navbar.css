@@ -88,6 +88,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: var(--color-orng);
 }
 
 .mobile-nav .contact-button-container {

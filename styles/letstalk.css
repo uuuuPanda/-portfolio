@@ -7,6 +7,7 @@
     padding: 3vw;
     background-color: var(--color-purp);
     box-shadow: var(--card-shadow);
+    color: var(--color-whit);
     border-radius: 12px;
     width: 80%;
     display: flex;
@@ -16,7 +17,6 @@
 
 .letstalk-header {
     margin: auto 0;
-    color: var(--color-whit);
     font: var(--text-table-subheader);
     text-align: center;
 }
@@ -24,7 +24,6 @@
 .letstalk-text {
     margin: auto 0;
     padding: 0;
-    color: var(--color-whit);
     font: var(--text-box-header);
     text-align: center;
 }

@@ -143,39 +143,43 @@
             <section id="projects" class="container">
                 <h1 class="big-header color-black fade-in-1">Проекты</h1>
                 <div class="projects-display fade-in-2">
-                    <figure class="projects-card">
-                        <figcaption class="projects-card-caption">
-                            Для заказчика создан сайт "Экскурсия по Санкт-Петербургу". Уложился в короткие сроки, бонусом создал раздел обратной связи.
+                    <figure class="projects-card-1">
+                        <figcaption class="projects-caption">
+                            Cоздан сайт "Экскурсия по Санкт-Петербургу".
                             <a class="animated" href="https://github.com/uuuuPanda/html-and-css-first-work.git">Посмотреть сайт</a>
                         </figcaption>
                     </figure>
-                    <figure class="projects-card">
-                        <figcaption class="projects-card-caption">
-                            Заказчик попросил сделать вращающийся по оси кубик с нумерованными гранями. Исполнение заказа оказалось не таким простым, но очень интересным.
+
+                    <figure class="projects-card-2">
+                        <figcaption class="projects-caption">
+                            Создан вращающийся по оси кубик с нумерованными гранями.
                             <a class="animated" href="https://github.com/uuuuPanda/kube.git">Посмотреть сайт</a>
                         </figcaption>
                     </figure>
 
-                    <figure class="projects-card">
-                        <figcaption class="projects-card-caption">
+                    <figure class="projects-card-3">
+                        <figcaption class="projects-caption">
                             Короткое описание проекта: в чем его суть, что было сделано
                             <a class="animated" href="https://example.com">Посмотреть сайт</a>
                         </figcaption>
                     </figure>
-                    <figure class="projects-card">
-                        <figcaption class="projects-card-caption">
+
+                    <figure class="projects-card-4">
+                        <figcaption class="projects-caption">
                             Короткое описание проекта: в чем его суть, что было сделано
                             <a class="animated" href="https://example.com">Посмотреть сайт</a>
                         </figcaption>
                     </figure>
-                    <figure class="projects-card">
-                        <figcaption class="projects-card-caption">
+
+                    <figure class="projects-card-5">
+                        <figcaption class="projects-caption">
                             Короткое описание проекта: в чем его суть, что было сделано
                             <a class="animated" href="https://example.com">Посмотреть сайт</a>
                         </figcaption>
                     </figure>
-                    <figure class="projects-card">
-                        <figcaption class="projects-card-caption">
+                    
+                    <figure class="projects-card-6">
+                        <figcaption class="projects-caption">
                             Короткое описание проекта: в чем его суть, что было сделано
                             <a class="animated" href="https://example.com">Посмотреть сайт</a>
                         </figcaption>
@@ -351,5 +355,42 @@
                 </a> 
             </p>
         </footer>
+
+        <script>
+            const reviews = document.querySelectorAll('.reviews-card');
+            
+            const prevButton = document.querySelector('.reviews-toggle-button:first-child');
+            const nextButton = document.querySelector('.reviews-toggle-button:last-child');
+
+            let currentReviewIndex = 0;
+
+            function showCurrentReview() {
+                reviews.forEach(review => {
+                    review.style.display = 'none';
+                });
+                
+                reviews[currentReviewIndex].style.display = 'flex';
+            }
+
+            prevButton.addEventListener('click', () => {
+                currentReviewIndex--;
+                if (currentReviewIndex < 0) {
+                    currentReviewIndex = reviews.length - 1;
+                }
+
+                showCurrentReview();
+            });
+            
+            nextButton.addEventListener('click', () => {
+                currentReviewIndex++;
+                if (currentReviewIndex >= reviews.length) {
+                    currentReviewIndex = 0;
+                }
+
+                showCurrentReview();
+            });
+            showCurrentReview();
+        </script>
+
     </body>
 </html>
